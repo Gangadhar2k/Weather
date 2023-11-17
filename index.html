@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="icon" href="./images/logooo.png" type="png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <card>
+      <div class="card-wrapper">
+        
+          <form id="input_form">
+							<div class="search_section">
+							<input type="text"   placeholder="Enter city name" id="search_input" />
+							<button type="submit" id="search_btn">
+								<img src="./images/search.png" alt="" />
+							</button>
+						</div>
+			</form>
+
+            <div class="error">
+                <p></p>
+            </div>
+        
+
+        <div class="content">
+                <div class="weather">
+                        <img id="weather_img" src="./images/weather.webp" alt="img" />
+                        <h1 id="weather_temp">--</h1>
+                        <h2 id="city_name">city</h2>
+                </div>
+                <div class="details">
+                    <div>
+                        <div><img src="./images/humidity.png" alt="Humidity" /></div>
+                        <div>
+                        <h3 id="city_hum">--</h4>
+                        <h4 >Humidity</h5>
+                        </div>
+                    </div>
+                    <div>
+                        <div><img src="./images/wind.png" alt="wind" /></div>
+                        <div>
+                        <h3 id="city_wind">--</h4>
+                        <h4>wind</h5>
+                        </div>
+                    </div>
+                </div>
+        </div>
+      </div>
+    </card>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

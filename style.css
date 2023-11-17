@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+  }
+  
+  card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(184, 211, 227);
+    padding:20px;
+  }
+  
+  .card-wrapper {
+    background-image: linear-gradient(135deg, #5efce8 10%, #736efe 100%);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 41px -8px #39ddfa;
+    /* width:500px; */
+  }
+  
+  .search_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .search_section > input {
+    outline: none;
+    border: none;
+    font-size: 20px;
+    height: 40px;
+    width: 80%;
+    border-radius: 30px;
+    padding-inline: 10px;
+    color: black;
+  }
+
+  .search_section >input::placeholder{
+    font-size: 16px;
+}
+  
+  .search_section > button {
+    background: white;
+    padding: 7px;
+    border: none;
+    border-radius: 50%;
+    /* padding: 15px; */
+  }
+  .search_section > button > img {
+    width: 20px;
+    height: 18px;
+    padding: 2px;
+  }
+/* 
+  #search_btn:focus {
+    outline: none; 
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); 
+  } */
+  
+  .error>p{
+    color: rgb(17, 6, 6);
+    font-size: 20px;
+    padding-inline: 10px;
+    font-weight: 500;
+    display: none;
+    text-align: center;
+    margin-top: 2px;
+}
+
+    .content{
+        display: none;
+     }
+  .weather {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+  }
+  .weather > img {
+    width: 150px;
+  }
+  
+  .weather > h1 {
+    font-size: 50px;
+  }
+  
+  .weather > h2 {
+    font-size: 35px;
+  }
+  
+  .details {
+    
+    display: flex;
+    justify-content: space-between;
+    /* width: 80%; */
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .details > div {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+  }
+  
+  .details > div > div:first-child > img {
+    width: 40px;
+  }
+  
+  .details > div > div:last-child > h3 {
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 500;
+  }
+  .details > div > div:last-child > h4 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  @media only screen and (max-width: 350px){
+    .details{
+        gap: 20px;
+    }
+
+    .details>div>div:first-child>img{
+        width:35px;
+    }
+
+    .details>div>div:last-child>h3{
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 500;
+    }
+    
+    .details>div>div:last-child>h4{
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+}
+  
+  
